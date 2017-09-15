@@ -4,7 +4,9 @@
   "description": "SonarQube Typescript Demo",
   "main": "dist/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tslint --type-check --project tsconfig.json -c tslint.json 'src/**/*.ts'",
+    "sonar": "gulp sonar"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,12 @@
   "bugs": {
     "url": "https://github.com/yuriburger/sonar-ts-demo/issues"
   },
-  "homepage": "https://github.com/yuriburger/sonar-ts-demo#readme"
+  "homepage": "https://github.com/yuriburger/sonar-ts-demo#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "sonarqube-scanner": "^2.0.1",
+    "tslint": "^5.7.0",
+    "tslint-sonarts": "^1.0.0",
+    "typescript": "^2.5.2"
+  }
 }
