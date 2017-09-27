@@ -1,5 +1,11 @@
 # sonar-ts-demo
-SonarSource recently released an official first version of a static code analyzer for TypeScript. So if you want to get up and running with SonarQube and Typescript: now you have an easy way to do this.The supported scenarios are:Run SonarTS as a TSLint extensionRun SonarTS as a SonarQube plugin. More info: [Getting started with SonarQube and TypeScript](https://yuriburger.net/2017/09/27/getting-started-with-sonarqube-and-typescript/)
+SonarSource recently released an official first version of a static code analyzer for TypeScript. So if you want to get up and running with SonarQube and Typescript: now you have an easy way to do this.
+
+The supported scenarios are:
+*Run SonarTS as a TSLint extensionRun 
+*SonarTS as a SonarQube plugin. 
+
+More info: [Getting started with SonarQube and TypeScript](https://yuriburger.net/2017/09/27/getting-started-with-sonarqube-and-typescript/)
 
 To setup the demo:
 
