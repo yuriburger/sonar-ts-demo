@@ -7,6 +7,8 @@ The supported scenarios are:
 
 More info: [Getting started with SonarQube and TypeScript](https://yuriburger.net/2017/09/27/getting-started-with-sonarqube-and-typescript/)
 
+And for the code coverage part: TODO
+
 To setup the demo:
 
 `npm install`
@@ -14,6 +16,10 @@ To setup the demo:
 To run the TSLint demo:
 
 `npm run lint`
+
+To build and run the Karma test demo: 
+`npm run build`
+`npm run test`
 
 To run the SonarQube demo:
 
