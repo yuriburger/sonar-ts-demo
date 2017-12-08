@@ -18,7 +18,9 @@ To run the TSLint demo:
 `npm run lint`
 
 To build and run the Karma test demo: 
+
 `npm run build`
+
 `npm run test`
 
 To run the SonarQube demo:
