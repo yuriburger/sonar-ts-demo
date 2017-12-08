@@ -293,3 +293,6 @@ dist/
 
 # SonarQube working directory
 .scannerwork/
+
+# Code Coverage
+coverage/

@@ -2,10 +2,11 @@
   "name": "sonar-ts-demo",
   "version": "1.0.0",
   "description": "SonarQube Typescript Demo",
-  "main": "dist/main.js",
+  "main": "dist/hello.component.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "tslint --type-check --project tsconfig.json -c tslint.json 'src/**/*.ts'",
+    "build": "tsc",
+    "test": "karma start",
+    "lint": "tslint --project tsconfig.json -c tslint.json 'src/**/*.ts'",
     "sonar": "gulp sonar"
   },
   "repository": {
@@ -24,7 +25,14 @@
   },
   "homepage": "https://github.com/yuriburger/sonar-ts-demo#readme",
   "devDependencies": {
+    "@types/jasmine": "^2.8.2",
     "gulp": "^3.9.1",
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.1.1",
+    "karma-typescript": "^3.0.8",
     "sonarqube-scanner": "^2.0.1",
     "tslint": "^5.7.0",
     "tslint-sonarts": "^1.0.0",
