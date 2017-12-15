@@ -7,7 +7,7 @@ The supported scenarios are:
 
 More info: [Getting started with SonarQube and TypeScript](https://yuriburger.net/2017/09/27/getting-started-with-sonarqube-and-typescript/)
 
-And for the code coverage part: TODO
+And for the code coverage part: [Better Together: SonarQube, TypeScript and Code Coverage](https://yuriburger.net/2017/12/11/better-together-sonarqube-typescript-and-code-coverage/)
 
 To setup the demo:
 
