@@ -4,9 +4,11 @@
   "description": "SonarQube Typescript Demo",
   "main": "dist/hello.component.js",
   "scripts": {
+    "start": "node ./dist/index.js",
     "build": "tsc",
     "test": "karma start",
     "lint": "tslint --project tsconfig.json -c tslint.json 'src/**/*.ts'",
+    "dev": "tsc --watch & nodemon dist",
     "sonar": "gulp sonar"
   },
   "repository": {
@@ -24,6 +26,12 @@
     "url": "https://github.com/yuriburger/sonar-ts-demo/issues"
   },
   "homepage": "https://github.com/yuriburger/sonar-ts-demo#readme",
+  "dependencies": {
+    "@types/express": "^4.16.0",
+    "@types/node": "^8.0.20",
+    "express": "^4.16.4",
+    "nodemon": "1.11.0"
+  },
   "devDependencies": {
     "@types/jasmine": "^2.8.2",
     "gulp": "^3.9.1",
