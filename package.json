@@ -6,9 +6,10 @@
   "scripts": {
     "start": "node ./dist/index.js",
     "build": "tsc",
-    "test": "mocha ./src/**/*.spec.ts --recursive --compilers ts:ts-node/register --bail",
+    "test": "mocha ./src/*.spec.ts --recursive --compilers  ts:ts-node/register --bail",
     "lint": "tslint --project tsconfig.json -c tslint.json 'src/**/*.ts'",
-    "dev": "tsc --watch & nodemon dist",
+    "start:dev": "NODE_ENV=development nodemon --watch app/ --exec 'ts-node' src/index.ts",
+    "cover": "nyc --report-dir coverage npm run test",
     "sonar": "gulp sonar"
   },
   "repository": {
@@ -29,11 +30,13 @@
   "dependencies": {
     "@types/chai": "^4.1.6",
     "@types/express": "^4.16.0",
+    "@types/mocha": "^5.2.5",
     "@types/node": "^8.0.20",
     "chai": "^4.2.0",
     "express": "^4.16.4",
     "mocha": "^5.2.0",
     "nodemon": "1.11.0",
+    "nyc": "^13.1.0",
     "ts-node": "^7.0.1"
   },
   "devDependencies": {

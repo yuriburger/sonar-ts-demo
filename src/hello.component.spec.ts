@@ -1,6 +1,6 @@
+import { expect } from "chai";
 import { HelloComponent } from "./hello.component";
 import { IHelloService } from "./hello.service.interface";
-import { expect } from "chai";
 
 class MockHelloService implements IHelloService {
     public sayHello(): string {
