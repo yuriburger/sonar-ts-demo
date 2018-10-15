@@ -1,5 +1,6 @@
 import { HelloComponent } from "./hello.component";
 import { IHelloService } from "./hello.service.interface";
+import { expect } from "chai";
 
 class MockHelloService implements IHelloService {
     public sayHello(): string {
@@ -13,6 +14,6 @@ describe("HelloComponent", () => {
         const mockHelloService = new MockHelloService();
         const helloComponent = new HelloComponent(mockHelloService);
 
-        expect(helloComponent.sayHello()).toEqual("Hello world!");
+        expect(helloComponent.sayHello()).equal("Hello world!");
     });
 });
