@@ -17,4 +17,4 @@ pipelines:
             build: # name of the job
               tasks:
                - exec: # indicates type of task
-                   command: -c npm install &amp;&amp; npm run build &amp;&amp; npm run test &amp;&amp; npm run cover &amp;&amp; npm run sonar
+                   command: -c echo "this is a demo"
