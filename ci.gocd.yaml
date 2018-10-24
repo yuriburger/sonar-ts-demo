@@ -3,7 +3,7 @@ environments:
     environment_variables:
       EXAMPLE_DEPLOYMENT: testing
     pipelines:
-      - yamlpipe1
+      - yamlpipeDemo
 pipelines:
   yamlpipe1:
     group: simple
