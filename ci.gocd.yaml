@@ -5,7 +5,7 @@ environments:
     pipelines:
       - yamlpipeDemo
 pipelines:
-  yamlpipe1:
+  yamlpipeDemo:
     group: simple
     materials:
       mygit:  # this is the name of material
