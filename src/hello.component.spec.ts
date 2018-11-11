@@ -1,3 +1,4 @@
+import { expect } from "chai";
 import { HelloComponent } from "./hello.component";
 import { IHelloService } from "./hello.service.interface";
 
@@ -13,6 +14,6 @@ describe("HelloComponent", () => {
         const mockHelloService = new MockHelloService();
         const helloComponent = new HelloComponent(mockHelloService);
 
-        expect(helloComponent.sayHello()).toEqual("Hello world!");
+        expect(helloComponent.sayHello()).equal("Hello world!");
     });
 });
